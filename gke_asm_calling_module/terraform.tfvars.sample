@@ -1,0 +1,5 @@
+/* GLOBAL */
+project_id = "<your project ID>"
+region     = "<your desired region>"
+channel    = "stable" #Anthos CPR channel version
+hub_project_id = "<your Fleet project ID>"
