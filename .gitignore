@@ -1,18 +1,37 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+**/*/kubeconfig
+*.crt
+*.pem
+*.key
+*/jwt-token.txt
+*.json
+*.p12
+.DS_Store
 
-# Other files and folders
-.settings/
+#test variable.tf files
+**/variables.tf.bk
+**/*.bk
+**/*.bk1
+# Local .terraform directories
+**/.terraform/*
+.terraform.lock.hcl
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# .tfstate files
+*.tfstate
+*.tfstate.*
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+#*.tfvars
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
