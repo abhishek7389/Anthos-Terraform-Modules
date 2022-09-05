@@ -6,7 +6,18 @@
 
 - Modify the state file location of your existing cluster in the data-source file of the calling module
 
-- (Optional)there might be path issues while referencing the root module so if you're following company standard terraform        structure then just put the files to the respective folder following the same structure.
+- (Optional)there might be path issues while referencing the root module so if you're following company standard terraform 
+structure then just put the files to the respective folder following the same structure.
+
+## Copy the repo to your local 
+```
+git clone https://github.com/abhishek7389/Anthos-Terraform-Modules.git
+```
+
+## Changing directory to the editable folder
+```
+cd gke_asm_calling_module
+```
 
 ## Editable section
 
@@ -24,6 +35,21 @@
 
 ![image](https://user-images.githubusercontent.com/52596897/184919182-15f3b842-84f7-49ff-ade1-65063bca08a2.png)
 
+## Applying the configuration
+
+1 Download the required modules
+```
+terraform init
+```
+
+2. Validate the deployments
+```
+terraform plan
+```
+3. Deploy the ASM to our existing cluster
+```
+terraform apply
+```
 
 ### Note: For cross-project as well it is working but not expected.
 
